@@ -49,7 +49,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         {{ Form::label('manager', __('Manager'),['class'=>'form-label']) }}
-                        {{ Form::select('manager',$user_list, null, ['class' => 'form-control', 'id' => 'manager_id', 'data-toggle' => 'select']) }}
+                        {{ Form::select('manager_id',$user_list, null, ['class' => 'form-control', 'id' => 'manager_id', 'data-toggle' => 'select']) }}
                     </div>
                 </div>
                 @stack('add_users_mobile_no_filed')

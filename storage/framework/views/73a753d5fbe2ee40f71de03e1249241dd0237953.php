@@ -71,7 +71,7 @@ unset($__errorArgs, $__bag); ?>
                     <div class="form-group">
                         <?php echo e(Form::label('manager', __('Manager'),['class'=>'form-label'])); ?>
 
-                        <?php echo e(Form::select('manager',$user_list, null, ['class' => 'form-control', 'id' => 'manager_id', 'data-toggle' => 'select'])); ?>
+                        <?php echo e(Form::select('manager_id',$user_list, null, ['class' => 'form-control', 'id' => 'manager_id', 'data-toggle' => 'select'])); ?>
 
                     </div>
                 </div>

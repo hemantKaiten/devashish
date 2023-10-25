@@ -93,10 +93,7 @@ unset($__errorArgs, $__bag); ?>
                 
             <?php endif; ?>
 
-        <!-- CODE FOR MANAGERS DROPDOWNS -->
-        <!-- Hemant -->
-
-
+      
 
             <?php if(Auth::user()->type != 'super admin'): ?>
                 <div class="col-md-12">

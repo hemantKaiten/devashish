@@ -62,10 +62,7 @@
                 
             @endif
 
-        <!-- CODE FOR MANAGERS DROPDOWNS -->
-        <!-- Hemant -->
-
-
+      
 
             @if(Auth::user()->type != 'super admin')
                 <div class="col-md-12">

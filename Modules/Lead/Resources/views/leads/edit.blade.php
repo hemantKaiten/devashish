@@ -23,6 +23,7 @@
                         {{ Form::label('subject', __('Subject'),['class'=>'col-form-label']) }}
                         {{ Form::text('subject', null, array('class' => 'form-control','required'=>'required')) }}
                     </div>
+
                     <div class="col-6 form-group">
                         {{ Form::label('user_id', __('User'),['class'=>'col-form-label']) }}
                         {{ Form::select('user_id', $users,null, array('class' => 'form-control','required'=>'required')) }}

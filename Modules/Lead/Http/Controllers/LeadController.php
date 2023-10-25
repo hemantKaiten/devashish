@@ -3,6 +3,7 @@
 namespace Modules\Lead\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Country;
 use App\Models\WorkSpace;
 use App\Models\EmailTemplate;
 use Illuminate\Contracts\Support\Renderable;
@@ -277,8 +278,9 @@ class LeadController extends Controller
             } else {
                 $customFields = null;
             }
+            $country = Country ::where('status', '=', '1')->get()->pluck('name','id');
 
-            return view('lead::leads.create', compact('users', 'customFields'));
+            return view('lead::leads.create', compact('users', 'customFields','country'));
         } else {
             return response()->json(['error' => __('Permission Denied.')], 401);
         }

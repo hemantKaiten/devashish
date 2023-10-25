@@ -23,6 +23,7 @@
                         {{ Form::label('subject', __('Subject'),['class'=>'col-form-label']) }}
                         {{ Form::text('subject', null, array('class' => 'form-control','required'=>'required')) }}
                     </div>
+
                     <div class="col-6 form-group">
                         {{ Form::label('user_id', __('User'),['class'=>'col-form-label']) }}
                         {{ Form::select('user_id', $users,null, array('class' => 'form-control select2','required'=>'required')) }}
@@ -44,6 +45,16 @@
                         {{ Form::label('phone', __('Phone No'),['class'=>'col-form-label']) }}
                         {{ Form::text('phone', null, array('class' => 'form-control','required'=>'required')) }}
                     </div>
+
+<!-- CODE FOR COUNTRY DROPDOWNS ADDED BY HEMANT -->
+
+                    <div class="col-6 form-group">
+                    {{ Form::label('name', __('Country'),['class'=>'col-form-label']) }}
+                        {{ Form::select('name', $country,null, array('class' => 'form-control country','id' => 'country_id','required'=>'required')) }}
+                        
+                    </div>
+
+
                 </div>
             </div>
             @if(module_is_active('CustomField') && !$customFields->isEmpty())

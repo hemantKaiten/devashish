@@ -328,7 +328,9 @@ class UserController extends Controller
                 $user->name = $request->name;
                 $user->email = $request->email;
                 $user->type = $role->name;
-                $user->manager_id = $request->manager_id;
+                $user->manager_id = $request->manager_id ;
+
+
 
 
 
